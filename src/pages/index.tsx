@@ -4,22 +4,22 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 
 export default function Home() {
-  const fetchApiUser = async () => {
-    await axios
-      .get('http://localhost:3001/api/users?limit=10&page=1&order=created%20asc')
-      .then(res => {
-        console.log('Response data:', res.data)
-        console.log('Response status:', res.status)
-        console.log('Response headers:', res.headers)
-      })
-      .catch(error => {
-        console.error('Error:', error)
-      })
-  }
+  // const fetchApiUser = async () => {
+  //   await axios
+  //     .get('http://localhost:3001/api/users?limit=10&page=1&order=created%20asc')
+  //     .then(res => {
+  //       console.log('Response data:', res.data)
+  //       console.log('Response status:', res.status)
+  //       console.log('Response headers:', res.headers)
+  //     })
+  //     .catch(error => {
+  //       console.error('Error:', error)
+  //     })
+  // }
 
-  useEffect(() => {
-    fetchApiUser()
-  }, [])
+  // useEffect(() => {
+  //   fetchApiUser()
+  // }, [])
 
   return (
     <>
