@@ -14,7 +14,8 @@ interface AclGuardProps {
 const AclGuard = (props: AclGuardProps) => {
   // ** Props
   const { aclAbilities, children, guestGuard = false, authGuard = true } = props
-  return <>{children}</>
+  
+return <>{children}</>
 }
 
 export default AclGuard
